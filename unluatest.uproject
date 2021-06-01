@@ -1,0 +1,13 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{D8FC4ED7-4197-4315-BB60-24B418366833}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "unluatest",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
