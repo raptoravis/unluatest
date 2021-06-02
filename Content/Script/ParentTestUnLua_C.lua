@@ -21,7 +21,8 @@ function ParentTestUnLua_C:ReceiveBeginPlay()
 
     UE4.UKismetSystemLibrary.PrintString(self,"Hello World from ParentTestUnLua_C!")
 
-    self.Overridden.ReceiveBeginPlay(self)
+    -- should not call it here as the self is TestUnLua_C!
+    -- self.Overridden.ReceiveBeginPlay(self)
 end
 
 --function ParentTestUnLua_C:ReceiveEndPlay()
