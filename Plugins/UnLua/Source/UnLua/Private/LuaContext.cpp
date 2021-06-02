@@ -28,6 +28,7 @@
 #include "ReflectionUtils/ReflectionRegistry.h"
 #include "Interfaces/IPluginManager.h"
 
+// ADD_LuaPanda
 #include "LibLuasocket.h"
 #include "LuaPanda.h"
 
@@ -251,6 +252,7 @@ void FLuaContext::CreateState()
 			Enum->Register(L);
 		}
 
+		// ADD_LuaPanda
 		if (FLibLuasocketModule::IsAvailable())
 		{
 			FLibLuasocketModule::Get().SetupLuasocket(L);

@@ -32,6 +32,8 @@ public class UnLua : ModuleRules
         PrivateIncludePaths.AddRange(
             new string[] {
                 "UnLua/Private",
+
+// ADD_LuaPanda
                 "LibLuasocket",
                 "LuaPanda",
             }
@@ -55,6 +57,8 @@ public class UnLua : ModuleRules
                 "InputCore",
                 "Projects",
                 "Lua",
+
+// ADD_LuaPanda
                 "LibLuasocket",
                 "LuaPanda",
             }
