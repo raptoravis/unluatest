@@ -6,18 +6,19 @@
 -- @DATE ${date} ${time}
 --
 
-require "UnLua"
-
-
-package.cpath = package.cpath .. ";D:/dev/unluatest.git/Plugins/luasocketBin/win/x64/socket/?.dll"
+-- package.cpath = package.cpath .. ";D:/dev/luapanda_luasocket/build/win64/Debug/?.dll;D:/dev/unluatest.git/Plugins/luasocketBin/win/x64/socket/?.dll"
 -- require('socket.core')
-
-print(package.cpath)
-UE4.UKismetSystemLibrary.PrintString(UE4, package.cpath)
 
 require("LuaPanda").start("127.0.0.1",8818)
 
-print("LuaPanda connected")
+require "UnLua"
+
+
+-- print(package.cpath)
+-- UE4.UKismetSystemLibrary.PrintString(UE4, package.cpath)
+
+
+-- print("LuaPanda connected")
 
 -- local TestUnLua_C = Class()
 local TestUnLua_C = Class("ParentTestUnLua_C")
